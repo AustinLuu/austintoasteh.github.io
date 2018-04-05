@@ -81,15 +81,48 @@ body{
 
 
 /*custom button styles*/
-.btn, .btn a{
+.btn a{
 	margin: 2px;
 	padding: 3px 6px;
-	background-color: lightgrey;
+	width: 100px;
+	max-width: 110px;
 	font-size: 13px;
 	text-decoration: none;
-	color: grey;
+	color: inherit;
+	border-radius: 5px;
 }
 
+.btn{
+	margin: 2px;
+	padding: 3px 6px;
+	width: 100px;
+	max-width: 110px;
+	font-size: 13px;
+	border-radius: 5px;
+	background-color: lightgray;
+	border: 0.9px  solid;
+}
+
+.btn:hover{
+	transform: translateY(-1px);
+	box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+.btn:active{
+	transform: translate(-1px);
+}
+
+.btn-red{
+	border-color: rgba(223,123,123,0.83);
+}
+
+.btn-blue{
+	border-color: rgba(119, 176, 242, 0.9);
+}
+
+.btn-green{
+	border-color: rgba(17, 191, 110, 0.9);
+}
 
 /*footer*/
 
@@ -98,7 +131,7 @@ body{
     background: #f5f5f5;
     border-top: 1px solid #d3d3d3;
 /*    text-align: center;*/
-    font-weight: 299
+    font-weight: 300;
 }
 
 #footer h3 {
@@ -112,6 +145,7 @@ body{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	padding-bottom: 10px;
 }
 
 .list-inline {
@@ -146,16 +180,13 @@ body{
     color: inherit;
 }
 
-.list-unstyled{
-	padding-bottom: 10px;
-}
 
 .fa-github:hover {
     color: #000000;
 }
 
 .fa-instagram:hover {
-	color: #c24de2;
+	color: #C83283;
 }
 
 .fa-facebook:hover {
