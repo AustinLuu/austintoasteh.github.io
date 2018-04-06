@@ -5,6 +5,7 @@
 	box-sizing: border-box;
 	text-align: center;
 	list-style: none;
+	min-width: 300px;
 }
 
 body{
@@ -124,6 +125,54 @@ body{
 	border-color: rgba(17, 191, 110, 0.9);
 }
 
+/*interest section*/
+
+#interests{
+	padding: 30px 40px;
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.grid{
+	padding: 20px;
+	display: grid;
+	font-size: 14px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto min-content;
+    grid-template-areas: 
+    "top1 top1"
+    "bot1 bot2";
+    grid-gap: 30px;
+}
+
+.grid h3{
+	letter-spacing: 2px;
+	font-weight: 600;
+	color: grey;
+}
+
+.grid .fas{
+	font-size: 60px;
+	padding: 25px;
+}
+
+.tabloid{
+	text-transform: uppercase;
+    color: #d1d1d1;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 10px;
+	grid-area: top1;
+}
+.personal{
+	grid-area: bot1;
+	padding: 20px;
+}
+
+.engineering{
+	grid-area: bot2;
+	padding: 20px
+}
 /*footer*/
 
 #footer {
@@ -180,7 +229,6 @@ body{
     color: inherit;
 }
 
-
 .fa-github:hover {
     color: #000000;
 }
@@ -208,7 +256,14 @@ body{
 .license{
 	padding-top: 5px;
 	font-size: 1.3em;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 0;
+	letter-spacing: 1.5px;
+	color: #c4c4c4;
 }
+
+
+/*animations*/
 
 .typed-cursor{
     opacity: 1;
