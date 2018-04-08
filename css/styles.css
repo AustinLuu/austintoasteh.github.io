@@ -127,7 +127,7 @@ body{
 
 /*interest section*/
 
-#interests{
+/*#interests{
 	padding: 30px 40px;
     background-color: black;
     font-family: 'Montserrat', sans-serif;
@@ -172,7 +172,7 @@ body{
 .engineering{
 	grid-area: bot2;
 	padding: 20px
-}
+}*/
 /*footer*/
 
 #footer {
@@ -334,3 +334,21 @@ body{
             50% { opacity:0; }
             100% { opacity:1; }
         }
+@media(max-width: 768px){
+  .heading-primary-main {
+	text-align: center;
+	display: block;
+	font-size: 32px;
+	font-weight: 390;
+	letter-spacing: 35px;
+	}
+  #fixedText{
+    float:none;
+    text-align:center;
+    width:100%;
+   	display: block;
+	}
+  .header{
+	height: 95vh;
+	}
+}
