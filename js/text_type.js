@@ -2,9 +2,9 @@ document.addEventListener('DOMContentLoaded', function(){
 
     Typed.new("#typed", {
         stringsElement: document.getElementById('typed-strings'),
-        typeSpeed: 100,
+        typeSpeed: 80,
         startDelay: 500,
-        backDelay: 500,
+        backDelay: 800,
         loop: false,
         showCursor: true,
         cursorChar: "|",
